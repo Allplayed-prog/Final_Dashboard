@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';export async function GET(req:Request){const r=NextResponse.redirect(new URL('/login',req.url));r.cookies.set('nythera_session','',{path:'/',maxAge:0});return r}
