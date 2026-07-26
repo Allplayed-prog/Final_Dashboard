@@ -1,0 +1,2 @@
+'use client';
+export function DataTable({rows,columns}:{rows:any[];columns:{key:string;label:string;render?:(r:any)=>React.ReactNode}[]}){return <div className="table"><div className="tr head">{columns.map(c=><div key={c.key}>{c.label}</div>)}</div>{rows.map((r,i)=><div className="tr" key={r.id||i}>{columns.map(c=><div key={c.key}>{c.render?c.render(r):String(r[c.key]??'–')}</div>)}</div>)}</div>}
