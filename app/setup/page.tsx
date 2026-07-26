@@ -1,1 +1,0 @@
-import {guard} from '@/lib/guards';import {Shell} from '@/components/shell';import SettingsManager from '@/components/settings-manager';export default async function Page(){await guard('management');return <Shell title="Server Einstellungen" subtitle="Zentrale Konfiguration für Nythera"><SettingsManager/></Shell>}

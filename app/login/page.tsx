@@ -1,1 +1,0 @@
-export default function Login(){return <div className="login"><div className="loginCard"><div className="logo big">N</div><h1>Nythera Management</h1><p>Melde dich mit Discord an. Dein Zugriff wird über deine Serverrolle geprüft.</p><a className="button" href="/api/auth/discord/start">Mit Discord anmelden</a></div></div>}
